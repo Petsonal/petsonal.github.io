@@ -135,9 +135,14 @@ const withMDX = nextMDX({
   },
 })
 
-export default withMDX({
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Configure `pageExtensions` to include MDX files
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
   output: 'export',
   images: { unoptimized: true },
   reactStrictMode: true,
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
-})
+}
+
+
+export default withMDX(nextConfig)
