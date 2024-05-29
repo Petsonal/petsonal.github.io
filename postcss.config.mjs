@@ -4,9 +4,6 @@ const config = {
     'postcss-import': {},
     'tailwindcss/nesting': {},
     tailwindcss: {},
-    'postcss-lightningcss': {
-      browsers: '>= .25%'
-    },
     'autoprefixer': {},
     'cssnano': {}
   },
