@@ -20,17 +20,15 @@ export default function RootLayout({ children }) {
 
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="nextra-banner-hidden">
-        {/* <ThemeProvider> */}
-          <div dir="ltr">
-            <Header />
-            <Body>
-              {children}
-            </Body>
-            <Footer />
-          </div>
-        {/* </ThemeProvider> */}
+        <div dir="ltr">
+          <Header />
+          <Body>
+            <ThemeProvider attribute="class" defaultTheme="light" enableSystem>{children}</ThemeProvider>
+          </Body>
+          <Footer />
+        </div>
       </body>
     </html>
   );
