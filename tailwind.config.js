@@ -77,5 +77,6 @@ module.exports = {
       }
     }
   },
+  darkMode: ['class', 'html[class~="dark"]'],
   plugins: [],
 };
