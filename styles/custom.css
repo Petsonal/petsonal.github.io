@@ -9,7 +9,10 @@
 
 html {
   @apply antialiased text-base scroll-pt-[--nextra-navbar-height];
-  font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1;
+  font-feature-settings:
+    "rlig" 1,
+    "calt" 1,
+    "ss01" 1;
   -webkit-tap-highlight-color: transparent;
 }
 

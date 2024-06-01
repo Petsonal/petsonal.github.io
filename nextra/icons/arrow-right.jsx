@@ -1,9 +1,6 @@
-"use client"
+"use client";
 
-export function ArrowRightIcon({
-  pathClassName,
-  ...props
-}) {
+export function ArrowRightIcon({ pathClassName, ...props }) {
   return (
     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...props}>
       <path
@@ -14,5 +11,5 @@ export function ArrowRightIcon({
         className={pathClassName}
       />
     </svg>
-  )
+  );
 }

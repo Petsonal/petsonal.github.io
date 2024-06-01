@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
 export default function Navbar({ children }) {
-    return (
-        <div className="nextra-nav-container sticky top-0 z-20 w-full bg-transparent print:hidden">
-            <div className="nextra-nav-container-blur" />
-            <nav className="mx-auto flex h-[var(--nextra-navbar-height)] max-w-[90rem] items-center justify-end gap-4 pl-[max(env(safe-area-inset-left),1.5rem)] pr-[max(env(safe-area-inset-right),1.5rem)]">
-                {children}
-                {/* {themeConfig.logoLink ? (
+  return (
+    <div className="nextra-nav-container sticky top-0 z-20 w-full bg-transparent print:hidden">
+      <div className="nextra-nav-container-blur" />
+      <nav className="mx-auto flex h-[var(--nextra-navbar-height)] max-w-[90rem] items-center justify-end gap-4 pl-[max(env(safe-area-inset-left),1.5rem)] pr-[max(env(safe-area-inset-right),1.5rem)]">
+        {children}
+        {/* {themeConfig.logoLink ? (
           <NextLink
             href={
               typeof themeConfig.logoLink === 'string'
@@ -22,7 +22,7 @@ export default function Navbar({ children }) {
             {renderComponent(themeConfig.logo)}
           </div>
         )} */}
-                {/* {items.map(pageOrMenu => {
+        {/* {items.map(pageOrMenu => {
           if (pageOrMenu.display === 'hidden') return null
 
           if (pageOrMenu.type === 'menu') {
@@ -67,26 +67,26 @@ export default function Navbar({ children }) {
           )
         })} */}
 
-                {/* {process.env.NEXTRASEARCH &&
+        {/* {process.env.NEXTRASEARCH &&
           renderComponent(themeConfig.search.component, {
             className: 'max-md:hidden'
           })} */}
 
-                {/* {themeConfig.project.link ? (
+        {/* {themeConfig.project.link ? (
           <Anchor href={themeConfig.project.link} newWindow>
             {renderComponent(themeConfig.project.icon)}
           </Anchor>
         ) : null} */}
 
-                {/* {themeConfig.chat.link ? (
+        {/* {themeConfig.chat.link ? (
           <Anchor href={themeConfig.chat.link} newWindow>
             {renderComponent(themeConfig.chat.icon)}
           </Anchor>
         ) : null} */}
 
-                {/* {renderComponent(themeConfig.navbar.extraContent)} */}
+        {/* {renderComponent(themeConfig.navbar.extraContent)} */}
 
-                {/* <button
+        {/* <button
           type="button"
           aria-label="Menu"
           className="nextra-hamburger rounded active:bg-gray-400/20 md:hidden"
@@ -94,7 +94,7 @@ export default function Navbar({ children }) {
         >
           <MenuIcon className={cn({ open: menu })} />
         </button> */}
-            </nav>
-        </div>
-    )
+      </nav>
+    </div>
+  );
 }

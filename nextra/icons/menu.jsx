@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import React from 'react'
+import React from "react";
 
 export function MenuIcon(props) {
   return (
@@ -36,7 +36,5 @@ export function MenuIcon(props) {
         />
       </g>
     </svg>
-
-  )
+  );
 }
-

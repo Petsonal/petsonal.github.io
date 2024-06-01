@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import React from 'react'
+import React from "react";
 
 export function CopyIcon(props) {
   return (
@@ -30,6 +30,5 @@ export function CopyIcon(props) {
         strokeLinejoin="round"
       />
     </svg>
-
-  )
+  );
 }

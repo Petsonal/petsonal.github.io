@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import React from 'react'
+import React from "react";
 
 export function TerminalIcon(props) {
   return (
@@ -18,6 +18,5 @@ export function TerminalIcon(props) {
         strokeLinejoin="round"
       />
     </svg>
-
-  )
+  );
 }
